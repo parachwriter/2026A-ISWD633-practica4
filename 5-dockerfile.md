@@ -57,7 +57,7 @@ No olvides verificar en qué directorio se encuentra el archivo Dockerfile
 ```
 
 **¿Cuántos pasos se han ejecutado?**
-# RESPONDER 
+Se ejecutaron 3 pasos porque no se terminó de ejecutar el paso 4 ya que no tengo una carpeta "web"
 
 ### Inspeccionar la imagen creada
 # COMPLETAR CON UNA CAPTURA
