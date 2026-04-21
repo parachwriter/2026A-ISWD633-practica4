@@ -91,11 +91,11 @@ Se están usando los puertos del host especificados en el mapeo -p.
 **¿Qué es una imagen huérfana?** 
 ````
 Una imagen huérfana es una imagen:
-````
--sin nombre ni etiqueta (<none>:<none>)
+
+-sin nombre ni etiqueta (<none>:<none>) 
 -que queda después de reconstruir o actualizar imágenes
 -no está asociada a ningún contenedor activo
-
+````
 ### Identificar imágenes huérfanas
 ```
 docker images -f "dangling=true"
