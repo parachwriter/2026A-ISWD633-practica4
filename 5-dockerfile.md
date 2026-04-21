@@ -61,10 +61,16 @@ No olvides verificar en qué directorio se encuentra el archivo Dockerfile
 Se ejecutaron 3 pasos porque no se terminó de ejecutar el paso 4 ya que no tengo una carpeta "web"
 ```
 ### Inspeccionar la imagen creada
-# COMPLETAR CON UNA CAPTURA
+
+
+<img width="946" height="547" alt="mi-imagen" src="https://github.com/user-attachments/assets/e21548cd-4b93-4dd1-91e3-f9a598d9bc76" />
+
+
 
 **Modificar el archivo index.html para incluir su nombre y luego crear una nueva versión de la imagen anterior**
 **¿Cuántos pasos se han ejecutado? ¿Observa algo diferente en la creación de la imagen**
+En esta ocasión 3 pasos
+Aunque no siempre aparece la palabra “CACHED” en la salida, Docker reutiliza capas internamente gracias a su sistema de cache. En la segunda construcción solo se vuelve a ejecutar la instrucción COPY, ya que el contenido de index.html cambió, mientras que las demás capas se reutilizan. 
 
 ## Mecanismo de caché
 Docker usa un mecanismo de caché cuando crea imágenes para acelerar el proceso de construcción y evitar la repetición de pasos que no han cambiado. Cada instrucción en un Dockerfile crea una capa en la imagen final. Docker intenta reutilizar las capas de una construcción anterior si no han cambiado, lo que reduce significativamente el tiempo de construcción.
