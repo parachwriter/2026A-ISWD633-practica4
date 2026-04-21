@@ -16,6 +16,14 @@ C:\Users\Usuario>echo %NUMBER_OF_PROCESSORS%
 20
 ```
 
+O desde PowerShell ejecutar $env:NUMBER_OF_PROCESSORS
+
+
+```
+PS C:\Users\Usuario> $env:NUMBER_OF_PROCESSORS
+20
+```
+
 ## Ejemplos
 _Puedes copiar y ejecutar directamente cada uno de los comandos_
 
